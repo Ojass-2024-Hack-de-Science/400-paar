@@ -1,0 +1,66 @@
+.register_box{
+    width:100%;
+    min-height: 100vh;
+    min-height: 100vh;
+}
+.register_container{
+    display: flex;
+    width:25%;
+    box-shadow: rgb(0 0 0/8%) 0px 3px 12px;
+    border-radius: 1rem;
+    justify-content: center;
+    margin: auto;
+}
+
+.register_container form{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width:100%;
+    background-color: white;
+}
+.register_container form input{
+    padding: 0.8rem;
+    margin-top: 0.2rem;
+    font-size: 16px;
+    border-radius: 1rem;
+    
+}
+.register_container form button{
+    background-color: black;
+     color: white;
+    padding: 0.8rem;
+    margin-top: 10px;
+    border:none;
+    font-size: 20px;
+    transition: .3s;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.main-head{
+    text-align: center;
+    padding: 0.5rem;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+ 
+}
+.register_container form span{
+    font-size: 16px;
+    /* margin-top: 10px; */
+    padding:0.2rem;
+    background-color: white;
+}
+.btn:hover{
+    
+    background-color:#F38D7D ;
+    color:white;
+}
+
+ 
+.success_mesg{
+text-align: center;
+font-size: 18px;
+}
