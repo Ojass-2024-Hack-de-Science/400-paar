@@ -1,7 +1,14 @@
 import './App.css';
+import Scenes from './Components/Scenes/Animation';
+import Featured from './Components/Games/Featured';
 
 function App() {
-  return <div className='bg-green-400'>Anshu kaaru prince</div>;
+  return (
+    <div>
+      <Scenes />
+      <Featured />
+    </div>
+  );
 }
 
 export default App;
