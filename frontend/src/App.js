@@ -1,9 +1,15 @@
-import React from 'react'
 
-const App = () => {
+import './App.css';
+import Scenes from './Components/Scenes/Animation';
+import Featured from './Components/Games/Featured';
+
+function App() {
   return (
-    <div>App</div>
-  )
+    <div>
+      <Scenes />
+      <Featured />
+    </div>
+  );
 }
 
 export default App
