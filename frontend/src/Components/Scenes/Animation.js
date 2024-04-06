@@ -3,6 +3,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import './style.css';
 import { useGSAP } from '@gsap/react';
+import Texts from './Texts/Texts';
 // import Text from '../text/Text';
 
 const Scenes = () => {
@@ -18,14 +19,13 @@ const Scenes = () => {
     canvas.height = window.innerHeight;
     // @ts-expect-error Image width and height may not exist
     const context = canvas.getContext('2d');
-    const frameCount = 420;
+    const frameCount = 2037;
 
-    const currentFrame = (index: number, extension: string) =>
-      `https://d38k0tpz62drdj.cloudfront.net/slides/${String(
-        index + 1
-      ).padStart(3, '0')}.${extension}`;
+    const currentFrame = (index) => {};
+    // `Assets/scenes_shoot_${String(index).padStart(5, '0')}.jpg`;
+    // '../../Assets/scenes_shoot_00000.jpg';
 
-    const images: HTMLImageElement[] = [];
+    const images = [];
     const ball = { frame: 0 };
 
     const render = () => {
@@ -39,11 +39,11 @@ const Scenes = () => {
 
     for (let i = 0; i < frameCount; i++) {
       const img = new Image();
-      if (i < 282) {
-        img.src = currentFrame(i, 'jpg');
-      } else {
-        img.src = currentFrame(i, 'png');
-      }
+      // if (i < 282) {
+      img.src = currentFrame(i);
+      // } else {
+      //   img.src = currentFrame(i, 'png');
+      // }
       images.push(img);
     }
 
@@ -69,10 +69,10 @@ const Scenes = () => {
         display: 'flex',
         flexDirection: 'column',
         zIndex: '999',
-        height: '1100vh',
+        // height: '1100vh',
       }}
     >
-      {/* <Text /> */}
+      <Texts />
       <canvas
         ref={canvasRef}
         className='canvas'
