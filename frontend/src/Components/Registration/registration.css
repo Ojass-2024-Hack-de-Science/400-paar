@@ -1,15 +1,28 @@
 .register_box{
     width:100%;
-    min-height: 100vh;
-    min-height: 100vh;
+     
+    background: url('../../../public/dragon3.jpg');
+    backdrop-filter: blur(5px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
 }
 .register_container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
-    width:25%;
-    box-shadow: rgb(0 0 0/8%) 0px 3px 12px;
+    flex-direction: column;
+    /* box-shadow: rgb(0 0 0/8%) 0px 3px 12px; */
     border-radius: 1rem;
-    justify-content: center;
-    margin: auto;
+    width: 30%;
+    padding: 2rem;
+    background: transparent;
+    border:1px solid white;
+    /* background-color: white; */
+    /* margin-top: 3rem; */
 }
 
 .register_container form{
@@ -18,13 +31,17 @@
     flex-direction: column;
     padding: 1rem;
     width:100%;
-    background-color: white;
+    background: transparent;
 }
 .register_container form input{
     padding: 0.8rem;
     margin-top: 0.2rem;
     font-size: 16px;
     border-radius: 1rem;
+    border:1px solid;
+    background: transparent;
+    border:1px solid white;
+    color: white;
     
 }
 .register_container form button{
@@ -48,14 +65,15 @@
  
 }
 .register_container form span{
-    font-size: 16px;
+    font-size: 18px;
     /* margin-top: 10px; */
     padding:0.2rem;
-    background-color: white;
+    background: transparent;
+    color: white;
 }
 .btn:hover{
     
-    background-color:#F38D7D ;
+    background-color:#363735ec ;
     color:white;
 }
 

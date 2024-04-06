@@ -1,16 +1,31 @@
+/* .body{
+    background: url('./dragon1.jpg');
+} */
+*{
+    padding: 0;
+    margin: 0;
+}
+ 
 .login_box{
     width:100%;
-    min-height: 100vh;
-    min-height: 100vh;
-    /* border: 2px solid green; */
+     
+    background: url('../../../public/dragon3.jpg');
+    backdrop-filter: blur(5px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+     
 }
+ 
+
 .google_login{
     display: flex;
     justify-content: center;
     height: 50px;
     text-align: center;
     align-items: center;
-    background-color:white;
+    background: transparent;
     color:black;
     border: 1px solid grey;
     cursor: pointer;
@@ -22,26 +37,32 @@
     margin-bottom: 0.5rem;
 }
 
-.login_container{
+.login_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
-    /* border:1px solid rgb(15, 15, 15); */
-    box-shadow: rgb(0 0 0/8%) 0px 3px 12px;
+    flex-direction: column;
+    /* box-shadow: rgb(0 0 0/8%) 0px 3px 12px; */
     border-radius: 1rem;
-    width:25%;
+    width: 25%;
     padding: 2rem;
-    justify-content: center;
-    margin: auto;
-   background-color: white;
+    background: transparent;
+    border:1px solid white;
+    /* background-color: white; */
 }
+
  
 
 .login_container form{
     
     display: flex;
     flex-direction: column;
-    background-color: white;
+    /* background-color: white; */
     /* padding: 1rem; */
-    width:100%
+    width:100%;
+    background: transparent;
 }
 .login_container form input{
     padding: 1rem;
@@ -49,6 +70,9 @@
     font-size: 18px;
     /* width:110% */
     border-radius: 1rem;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
     
 }
 .login_container form button{
@@ -67,6 +91,7 @@
 .g-text{
     /* font-size: 5px; */
     margin-left: 0.5rem;
+
 }
 
 
@@ -83,13 +108,15 @@
   font-weight: 400;
   font-style: normal;
   font-size: 50px;
-  background-color: white;
+  background: transparent;
+  color: white;
 }
 .login_container form span{
     font-size: 24px;
     margin-top: 10px;
     padding:0.2rem;
-    background-color: white;
+    background: transparent;
+    color: white;
 }
 
 .btn{
@@ -126,7 +153,7 @@
     list-style: none;
     margin-left: 5px;
     font-weight: bolder;
-    color:#F38D7D;
+    color:#a41a04;
     text-decoration: none;
     background-color: white;
 }

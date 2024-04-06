@@ -47,7 +47,10 @@ const Login=()=>{
     }
 
 
-    return ( <div className='login_box'>
+    return ( 
+      <div className="full">
+    <div className='login_box'>
+
     <div className="login_container">
     <form onSubmit={handleSubmit}>
   <h1 className="main-head font-roboto">Login</h1>
@@ -66,6 +69,7 @@ const Login=()=>{
           Register
         </li></Link></strong></div>
    </form>
+</div>
 </div>
 </div>
     )
