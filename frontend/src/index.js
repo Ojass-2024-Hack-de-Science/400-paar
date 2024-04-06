@@ -11,6 +11,7 @@ import Registration from './Components/Registration/Registration.js';
 import App from './App.js';
 import Configure from './Components/Specs/Configure.js';
 import Featured from './Components/Games/Featured.js';
+import GetAccess from './Components/Access/GetAccess.js';
 
 const routers = createBrowserRouter(
   createRoutesFromElements(
@@ -20,6 +21,8 @@ const routers = createBrowserRouter(
       <Route path='registration' element={<Registration />} />
       <Route path='gamespace' element={<Configure />} />
       <Route path='features' element={<Featured />} />
+      <Route path='access' element={<GetAccess />} />
+
     </Route>
   )
 );
@@ -30,3 +33,5 @@ root.render(
     <RouterProvider router={routers} />
   </React.StrictMode>
 );
+
+

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './configure.css';
-import { FaCaretLeft } from "react-icons/fa";
-import { FaCaretRight } from "react-icons/fa";
+
 
 const Configure = () => {
   const [selectedConfigIndex, setSelectedConfigIndex] = useState(null);
