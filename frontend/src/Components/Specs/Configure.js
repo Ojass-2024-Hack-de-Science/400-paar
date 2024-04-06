@@ -134,7 +134,9 @@ const Configure = () => {
             {selectedConfigIndex !== null && <Checkout
              name={configurations[selectedConfigIndex].name} 
              price={configurations[selectedConfigIndex].price}
-             time = {hours}
+             hrs = {hours}
+             min = {minutes}
+             sec = {seconds}
 
              />}
       </div>
