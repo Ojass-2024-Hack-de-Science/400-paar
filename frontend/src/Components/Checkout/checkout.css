@@ -1,0 +1,10 @@
+.btn1{
+    background-color: green;
+    padding: 1rem;
+    border: none;
+    height: 11vh;
+    font-size: 18px;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}

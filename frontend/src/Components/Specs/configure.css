@@ -1,98 +1,98 @@
 .configuration-card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.configuration-card:hover {
-  transform: translateY(-5px);
-}
-
-.configuration-card h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.configuration-card p {
-  font-size: 16px;
-  margin-bottom: 8px;
-}
-
-.bttn {
-  display: flex;
-  background-color: #007bff;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  border: none;
-  padding: 8px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.bttn:hover {
-  background-color: #0056b3;
-}
-
-.config-image {
-  width: 100%; /* Adjust the width as needed */
-  max-height: 200px; /* Adjust the max height as needed */
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.configurations {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  cursor: pointer;
-  margin-left: 3rem;
-  margin-top: 3rem;
-}
-.config_head {
-  font-size: 30px;
-  text-align: center;
-  margin-top: 0.5rem;
-}
-.selected {
-  background-color: rgb(198, 202, 198);
-}
-.bttn.selected {
-  background-color: green;
-}
-.timing_section {
-  border: 1px solid black;
-  width: 50%;
-  height: 11vh;
-  display: flex;
-  margin: auto;
-  background-color: black;
-  color: white;
-  border-radius: 1rem;
-}
-.inside_timing {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* padding: 1rem; */
-  margin: auto;
-  /* margin-left: 0.5rem; */
-}
-.inside_timing div {
-  margin-left: 0.2rem;
-}
-.counter {
-  font-size: 30px;
-  margin-left: 0.5rem;
-}
-.head {
-  font-size: 25px;
-}
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .configuration-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .configuration-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .configuration-card p {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .bttn{
+    display: flex;
+    background-color: #007bff;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bttn:hover {
+    background-color: #0056b3;
+  }
+  
+  .config-image {
+    width: 100%; /* Adjust the width as needed */
+    max-height: 200px; /* Adjust the max height as needed */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .configurations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    cursor: pointer;
+    margin-left: 3rem;
+    margin-top: 3rem;
+  }
+  .config_head{
+     font-size: 30px;
+     text-align: center;
+     margin-top: 0.5rem;
+  }
+  .selected{
+    background-color: rgb(198, 202, 198);
+  }
+  .bttn.selected{
+    background-color: green;
+  }
+  .timing_section{
+    border:1px solid black;
+    width:50%;
+    height: 11vh;
+    display: flex;
+    margin: auto;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+  }
+  .inside_timing{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1rem; */
+    margin: auto;
+    /* margin-left: 0.5rem; */
+  }
+  .inside_timing div{
+    margin-left: 0.2rem;
+  }
+  .counter{
+    font-size: 30px;
+    margin-left: 0.5rem;
+  }
+  .head{
+    font-size: 25px;
+  }

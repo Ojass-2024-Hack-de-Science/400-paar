@@ -1,3 +1,4 @@
+
 import './App.css';
 import Scenes from './Components/Scenes/Animation';
 import Featured from './Components/Games/Featured';
@@ -11,4 +12,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
