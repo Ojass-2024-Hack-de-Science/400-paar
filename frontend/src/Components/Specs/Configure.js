@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './configure.css';
+
 import Checkout from '../Checkout/Checkout';
 
 
@@ -92,15 +93,21 @@ const Configure = () => {
 
   return (
     <div>
-      <h2 className="config_head">Choose your PC configuration</h2>
-      <div className="configurations">
+      <h2 className='config_head'>Choose your PC configuration</h2>
+      <div className='configurations'>
         {configurations.map((config, index) => (
           <div
-            className={`configuration-card ${selectedConfigIndex === index ? 'selected' : ''}`}
+            className={`configuration-card ${
+              selectedConfigIndex === index ? 'selected' : ''
+            }`}
             key={index}
             onClick={() => handleSelectConfig(index)}
           >
-            <img src={config.image} alt={config.name} className="config-image" />
+            <img
+              src={config.image}
+              alt={config.name}
+              className='config-image'
+            />
             <h3>{config.name}</h3>
             <p>Processor: {config.processor}</p>
             <p>Graphics: {config.graphics}</p>
