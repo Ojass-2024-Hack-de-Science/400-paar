@@ -1,7 +1,9 @@
-import './App.css';
+import React from 'react'
 
-function App() {
-  return <div className='bg-green-400'>Anshu kaaru prince</div>;
+const App = () => {
+  return (
+    <div>App</div>
+  )
 }
 
-export default App;
+export default App

@@ -4,13 +4,18 @@ import { RouterProvider,createBrowserRouter, createRoutesFromElements,Route } fr
 import Login from './Components/Login/Login.js';
 import Registration from './Components/Registration/Registration.js';
 import App from './App.js'
+import Success from './Components/Success.js';
+import Configure from './Components/Specs/Configure.js';
 
 const routers = createBrowserRouter(
   createRoutesFromElements(
     <Route path = '/'>
       <Route path = "" element = {<App />}/>
+      <Route path = "success/:tm" element = {<Success />}/>
       <Route path = "login" element = {<Login/>}/>
       <Route path = "registration" element = {<Registration/>}/>
+      <Route path = "gamespace" element = {<Configure />}/>
+
     </Route>
   )
 )
