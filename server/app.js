@@ -89,7 +89,9 @@ app.post("/payment", async (req, res) => {
             payment_method_types: ["card"],
             line_items: lineItems,
             mode: "payment",
-            success_url: `http://localhost:3000/success/${products[0].time}`, 
+            // success_url: `http://localhost:3000/success/${products[0].hrs}:${products[0].min}:${products[0].sec}`,
+            success_url: `https://dash.parsec.app/`,
+
             cancel_url: "http://localhost:3000/cancel",
         });
 

@@ -1,15 +1,17 @@
 import { loadStripe } from '@stripe/stripe-js';
 import './checkout.css'
 
-function Checkout({name = 'pc-900', price = '20',time = 2}) {
+function Checkout({name = 'pc-900', price = '20',hrs = 2,min = 4,sec = 60}) {
     // console.log(price);
-    price = price * time;
+    price = price * hrs;
   const cards = [
     {
       product: name,
       price: price,
       productby: "test",
-      time : time
+      hrs : hrs,
+      min : min,
+      sec : sec
     }
   ];
 
