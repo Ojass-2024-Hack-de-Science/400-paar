@@ -21,8 +21,10 @@ const Scenes = () => {
     const context = canvas.getContext('2d');
     const frameCount = 2037;
 
-    const currentFrame = (index) => {};
-    // `Assets/scenes_shoot_${String(index).padStart(5, '0')}.jpg`;
+    const currentFrame = (index) =>
+      `https://shootscenes.s3.amazonaws.com/Assets/scenes_shoot_${String(
+        index
+      ).padStart(5, '0')}.jpg`;
     // '../../Assets/scenes_shoot_00000.jpg';
 
     const images = [];
