@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import './feature.css';
+import { useNavigate } from 'react-router-dom';
 
 const games = [
   {
@@ -46,6 +47,10 @@ function Game({ name, images }) {
 }
 
 const Featured = () => {
+  const navigate = useNavigate();
+  const handleTry = () => {
+    navigate('/gamespace');
+  };
   return (
     <div className='h-100 header'>
       <div>
@@ -54,6 +59,12 @@ const Featured = () => {
           {games.map((game, index) => (
             <Game key={index} name={game.name} images={game.images} />
           ))}
+          <div
+            className='h-12 w-40 bg-green-500 rounded-lg flex justify-center items-center hover:cursor-pointer'
+            onClick={handleTry}
+          >
+            Try now!
+          </div>
         </div>
       </div>
     </div>
